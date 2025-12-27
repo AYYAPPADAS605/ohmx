@@ -43,10 +43,15 @@ const Hero: React.FC = () => {
         </div>
         
         {/* UPDATED: Made the scroll indicator a clickable button */}
-        <div className="absolute bottom-8 left-1/2 -translate-x-1/2 animate-bounce">
-          <button onClick={() => handleNavClick('team')} aria-label="Scroll down">
-            <ChevronDown size={32} className="text-orange-500" />
-          </button>
+        <div className="space-y-8 flex flex-col items-center">
+         <button
+            onClick={() => handleNavClick('team')}
+             aria-label="Scroll down"
+        className="mt-4 animate-bounce text-orange-500 hover:text-orange-600 transition"
+>
+  <ChevronDown size={32} />
+</button>
+ 
         </div>
       </div>
     </section>
